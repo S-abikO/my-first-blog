@@ -11,6 +11,7 @@
         <div class="page-header">
             {% if user.is_authenticated %}
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon gliphicon-plus"></span></a>
+            <a href="<div data-gb-custom-block data-tag='url' data=0='post_draft_list'></div>" class="top-menu"><span class="glyphicon gliphicon-edit"></span></a>
             <p class="top-menu">Hello {{ uer.username }} <small>( <a href="{% url 'logout' %}">Log out</a> )</small></p>
             {% else %}
             <a href="{% url 'login' %}" class="top-menu">"><span class="glyphicon gliphicon-plus"></span></a>
