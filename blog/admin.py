@@ -1,5 +1,7 @@
+from xml.etree.ElementTree import Comment
 from django.contrib import admin
 
-from.models import Post
+from.models import Comment, Post
 
 admin.site.register(Post)
+admin.site.register(Comment)
